@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="celebrating an icon and a exceptional community leader"
+    />
+    <meta
+      name="keywords"
+      content="calgary community leader, nigerians in calgary, father, bestin realtor in calgary, nigerian professors in canada, grand father, granpa, fashionable old man, 80th birthday, 1942, happy birthday, icon, afro-canadian , northwest calgary, NCAC president, sherwood senior residents, sherwood"
+    />
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Dr.J.O Ogunariwo at 80</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/images/logo2.png" class="real-logo" alt="dro@80" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/testimony.html">Testimony</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <div class="full-img" id="fullImgBox">
+      <img src="images/img1.jpg" id="fullImg" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+      <img src="/images/Dr. Ogunnariwo1.jpg" onclick="openFullImg(this.src)" />
+      <img src="/images/Dr. Ogunnariwo2.jpg" onclick="openFullImg(this.src)" />
+      <img src="/images/Dr. Ogunnariwo4.jpg" onclick="openFullImg(this.src)" />
+      <img src="/images/Dr. Ogunnariwo5.jpg" onclick="openFullImg(this.src)" />
+      <img src="/images/Dr. Ogunnariwo6.jpg" onclick="openFullImg(this.src)" />
+      <img src="/images/Dr. Ogunnariwo7.jpg" onclick="openFullImg(this.src)" />
+    </div>
+
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+
+    <!-- <h2>Footer Stick to the Bottom</h2> -->
+
+    <footer>
+      <p>
+        copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        , TVM Media, CLS INC.
+      </p>
+    </footer>
+  </body>
+</html>
