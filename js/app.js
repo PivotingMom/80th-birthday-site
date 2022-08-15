@@ -84,3 +84,7 @@ function easeInOutCubic(t, b, c, d) {
 	return c/2*(t*t*t + 2) + b;
 };
 
+
+
+
+

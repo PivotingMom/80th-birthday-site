@@ -14,9 +14,7 @@
     />
     <script src="js/app.js" defer></script>
     <link rel="stylesheet" href="/style.css" />
-    <script src="lightbox-plus-jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -37,7 +35,7 @@
       <ul class="nav-links">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/biography.html">Biography</a></li>
-        <li><a href="#">Complimentaries</a></li>
+        <li><a href="#">Messages</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
       </ul>
 
@@ -52,22 +50,181 @@
 
     <!-- main body -->
 
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <div class="testimonial-text">
+          <div class="user-text">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Thank you Sir, for being a generational influence, mentor and role
+              model.
+            </p>
+            <span>Jolade, Ideator at TVM Media</span>
+          </div>
+          <div class="user-text active-text">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Thank you Sir, for being a generational influence, mentor and role
+              model.
+            </p>
+            <span>Jolade, Ideator at TVM Media</span>
+          </div>
+          <div class="user-text">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Thank you Sir, for being a generational influence, mentor and role
+              model.
+            </p>
+            <span>Jolade, Ideator at TVM Media</span>
+          </div>
+          <div class="user-text">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Thank you Sir, for being a generational influence, mentor and role
+              model.
+            </p>
+            <span>Jolade, Ideator at TVM Media</span>
+          </div>
+          <div class="user-text">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Thank you Sir, for being a generational influence, mentor and role
+              model.
+            </p>
+            <span>Jolade, Ideator at TVM Media</span>
+          </div>
+        </div>
+        <div class="testimonial-pic">
+          <img
+            src="/images/Dr. Ogunnariwo1.jpg"
+            class="user-pic"
+            onclick="showReview()"
+          />
+          <img
+            src="/images/Dr. Ogunnariwo1.jpg"
+            class="user-pic active-pic"
+            onclick="showReview()"
+          />
+          <img
+            src="/images/Dr. Ogunnariwo3.jpg"
+            class="user-pic"
+            onclick="showReview()"
+          />
+          <img
+            src="/images/Dr. Ogunnariwo4.jpg"
+            class="user-pic"
+            onclick="showReview()"
+          />
+          <img
+            src="/images/Dr. Ogunnariwo5.jpg"
+            class="user-pic"
+            onclick="showReview()"
+          />
+        </div>
+      </div>
+    </div>
+
+<script>
+
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics = document.getElementsByClassName("user-pic");
+
+    function showReview(){
+        for(userPic of userPics){
+            userPic.classList.remove("active-pic");
+        }
+        for(userText of userTexts){
+            userText.classList.remove("active-text");
+        }
+        let i = Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+    }
+
+</script>
+
+    <div class="message-title">
+      <h1>Best Wishes for Dr A. O. Ogunnariwo</h1>
+      <h2>
+        “If you admire somebody, you should go ahead and tell them. <br />People
+        never get the flowers while they can still smell them.”<br />
+
+        ― kanye west
+      </h2>
+    </div>
+
+    <div class="messages">
+      <h3>Send your birthday wishes</h3>
+      <form
+        target="_blank"
+        action="https://formsubmit.co/3a601d2d63fce7b1ff14bc17388b1dbb"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Hi, Dr. O appreciates that you've taken out time to send him some kind words, you message will be approved and visible on the webpage within 48 hours, Thank you."
+              />
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="col">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea
+            placeholder="Your Message"
+            class="form-control"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <div class="col">
+          <input
+            type="file"
+            name="photo"
+            class="form-control"
+            placeholder="your profile photo"
+          />
+        </div>
+        <button type="submit" class="submit">SUBMIT</button>
+      </form>
+    </div>
+
     <!-- scroll to the top arrow -->
     <button id="back-to-top-btn">
       <i class="fa-solid fa-chevrons-up"></i>
     </button>
-
-    <!-- <h2>Footer Stick to the Bott
-      om</h2> -->
-
-    <footer>
-      <p>
-        copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        , TVM Media, CLS INC.
-      </p>
-    </footer>
   </body>
+
+  <!-- <h2>Footer Stick to the Bott
+      om</h2> -->
+  <footer>
+    <p>
+      copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      , TVM Media, CLS INC.
+    </p>
+  </footer>
 </html>
